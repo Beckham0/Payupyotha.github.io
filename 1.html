@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จัดเลย์เอาต์ภาพ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .image-layout {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .top-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .bottom-images {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .bottom-images img {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-layout">
+    <div class="top-image">
+      <img src="imges/1.jpg" alt="รถปูน">
+    </div>
+    <div class="bottom-images">
+      <img src="imges/2.jpg" alt="เทปูน">
+      <img src="imges/2.jpg" alt="รถปูนหลายคัน">
+    </div>
+  </div>
+</body>
+</html>
