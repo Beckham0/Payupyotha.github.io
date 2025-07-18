@@ -1,12 +1,12 @@
 function createNavbar() {
   const navbarHTML = `
     
-<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 0px;">
-  <nav class="navbar navbar-expand-custom bg-body" style="z-index: 999; background-color:#3537398a !important; !important; height: 110px;">
+<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 100px;">
+  <nav class="navbar navbar-expand-custom bg-body" style="z-index: 999; background-color:#35373900 !important; !important; height: 100px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- โลโก้ -->
       <a class="navbar-brand" href="./index.html">
-      <img src="LOGO1.png" style="border-radius: 0px;" width="100%" height="95px"> 
+      <img src="LOGO1.png" style="border-radius: 0px;" width="100%" height="150px"> 
       </a>
 
       <!-- ปุ่มเปิดเมนูบนมือถือ -->
