@@ -412,7 +412,7 @@ html {
 
 .content3-buttons-b {
   flex: 1 1 calc(60% - 10px);
-  min-width: 300px;
+  min-width: 400px;
   width: 100%;
   height: auto;
   padding: 0px;
@@ -1194,7 +1194,7 @@ html {
     margin-bottom: 10px;
   }
 
-    .content9-buttons-a h2 {
+  .content9-buttons-a h2 {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;
