@@ -1528,7 +1528,7 @@ html {
 
 
 .section_b {
-  height: 43rem;
+  height: 40rem;
   display: flex;
   flex-direction: column-reverse;
 }
@@ -1599,12 +1599,14 @@ html {
 
 .card_buttons {
   position: absolute;
-  left: 70%;
-  bottom: 5%;
+  left: 120%;
+  bottom: 9%;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   z-index: 10;
+  width: 1200px;
+  height: 100px;
 }
 
 .btn-yellow {
@@ -1612,23 +1614,38 @@ html {
   color: #000;
   border: none;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 1px;
   font-weight: bold;
   cursor: pointer;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn-yellow:hover {
+  background-color: #c3a601;
 }
 
 .line-btn {
   text-align: center;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .line-btn img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin: 0 0 10px 0;
+  transition: background-color 0.3s;
 }
 
+.line-btn img :hover {
+  width: 110px;
+  height: 110px;
+}
 
 @media (max-width: 768px) {
 
@@ -1641,10 +1658,10 @@ html {
   .Card_5 {
     position: relative;
     width: 95%;
-    height: 35%;
+    height: 40%;
     display: flex;
     flex-direction: column-reverse;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 0px 30px 30px 0px;
   }
 
   .card_img1 {
@@ -1698,6 +1715,45 @@ html {
     position: absolute;
     font-size: clamp(13px, 3.5vw, 38px);
     font-weight: bold;
+  }
+
+
+  .card_buttons {
+    position: absolute;
+    left: 75%;
+    bottom: 11%;
+    display: grid;
+    flex-direction: row;
+    gap: 1px;
+    z-index: 10;
+    width: 150px;
+    height: 100px;
+  }
+
+  .btn-yellow {
+    background-color: #ffe600;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .line-btn {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0rem;
+    font-weight: 700;
+  }
+
+  .line-btn img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 0 0 10px 0;
+    transition: background-color 0.3s;
   }
 
 }

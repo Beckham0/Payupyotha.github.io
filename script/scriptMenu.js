@@ -47,168 +47,173 @@ function createNavbar() {
 }
 
 
-
-
-
 function createfooter() {
   const footerHTML = `
-      <style>
-  
-          .footer {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-              padding: 20px;
-              background-color: #012f6c;
-              margin-left: 50px;
-          }
-  
-          .footer-column {
-              flex: 1;
-              min-width: 200px;
-              padding: 10px;
-              text-align: left;
-          }
-  
-          .footer-column h3 {
-              color:rgb(255, 255, 255);
-              margin: 0;
-              font-size: 35px;
-              margin-bottom: 5px;
-              font-weight: bold;
-          }
-  
-          .footer-column h4 {
-              color: #ffffff;
-              margin: 0;
-              font-size: 28px;
-              margin-bottom: 5px;
-              font-weight: bold;
-          }
-  
-          .footer-column a {
-            font-size: 19px;
-            color: #ffffff;
+
+    <style>
+        body {
             margin: 0;
-            text-indent: 10px;
-          }
+            padding: 0;
+        }
 
-          .footer-column a {
-            text-decoration: none;
-          }
-  
-          .footer-column p {
-            font-size: 19px;
+        .content-end {
+            /*padding: 10px 0;*/
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #223d3c;
+            margin-top: 50px;
+        }
+
+        .port-content-end {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .image-end {
+            flex: 1 1 calc(70% - 10px);
+            max-width: 900px;
+            width: 100%;
+            background-color: rgba(255, 246, 233, 1);
+            padding: 10px;
+            display: grid;
+        }
+
+        .top-end img {
+            width: 24%;
+            height: 200px;
+            display: block;
+            justify-self: center;
+            padding-top: 10px;
+        }
+
+        .bottom-end {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .bottom-end img {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 90px 90px 0 0;
+            margin: 5px 100px;
+            padding-bottom: 20px;
+        }
+
+
+
+        .contact-form {
+            flex: 1 1 calc(30% - 10px);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 40px 40px 70px;
+            text-align: center;
             color: #ffffff;
-            margin: 0;
-          }
-  
-          .logo {
-            width: 190px;
-            margin-bottom: 15px;
-            margin-left: 40px;
-          }
-  
-          .contact img {
-            width: 139px;
-            margin-right: 10px;
-          }
-  
-          .qr-code {
-              width: 80px;
-              height: 139px;
-          }
-  
+        }
 
-          @media (max-width: 768px) {
-              .footer {
-                  flex-direction: column;
-                  align-items: center;
-                  margin-left: 0;
-              }
-  
-              .footer-column {
-                  width: 100%;
-                  text-align: center;
-              }
+        .contact-form h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
 
-            .footer-column h3 {
-              font-size: 30px;
-          }
-  
-          .footer-column h4 {
-              font-size: 25px;
-          }
-  
-          .footer-column a {
-            font-size: 12px;
-          }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
 
-          .footer-column p {
-            font-size: 15px;
-            color: #ffffff;
-            margin: 0;
-          }
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #ffffff66;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
 
-          }
-  
-          @media (max-width: 480px) {
-              .footer {
-                  flex-wrap: wrap;
-                  flex-direction: row;
-                  justify-content: center;
-                  margin-left: 0;
-              }
-  
-              .footer-column {
-                  width: 45%;
-                  text-align: left;
-              }
-  
-    .logo {
-      width: 155px;
-      margin-bottom: 20px;
-      margin-left: 16px;
-    }
-  
-  p {
-    font-size: 15px;
-    color: #ffffff;
-    margin:
-  0;
-  }
-          }
-      </style>
-  
-    <footer class="footer">
-    
-        <div class="footer-column">
-            <h3>การบริการ</h3>
-            <a href=""><p>● เเจ้งเคลม</p></a>
-            <a href=""><p>● การจัดการกรมธรรม์</p></a>
-            <a href=""><p>● ขอหนังสือรับรองชำระเบี้ย</p></a>
-            <a href=""><p>● การบริการอื่นๆ</p></a>
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #ffffffaa;
+        }
+
+        .contact-form button {
+            margin-top: 30px;
+            background: none;
+            border: none;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            /*background-color: #e0c402;
+            padding: 10px;
+            border-radius: 20px;*/
+        }
+
+        .contact-form button:hover {
+            transform: scale(1.25);
+        }
+
+@media (max-width: 768px) {
+        
+        .top-end img {
+          width: 30%;
+          height: 120px;
+        } 
+        
+        .bottom-end img {
+          height: 200px;
+          border-radius: 50px 50px 0 0;
+          margin: 5px 20px;
+          padding-bottom: 0px;
+        }
+        
+        .contact-form {
+          margin: 0 auto;
+          padding: 20px 40px;
+        }       
+}
+    </style>
+</head>
+
+<body>
+    <div class="content-end">
+        <div class="port-content-end">
+            <div class="image-end">
+                <div class="top-end">
+                    <img src="LOGO1.png">
+                </div>
+                <div class="bottom-end">
+                    <img src="imges/end.jpg">
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>ติดต่อเรา</h2>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="ชื่อ–สกุล" required>
+                    <input type="text" name="company" placeholder="บริษัท">
+                    <select name="service">
+                        <option disabled selected>เลือกบริการ</option>
+                        <option style="color: rgba(0, 0, 0, 1);">รับสร้างโรงงาน</option>
+                        <option style="color: rgba(0, 0, 0, 1);">รับสร้างบ้าน อาคาร</option>
+                        <option style="color: rgba(0, 0, 0, 1);">ผลิตจำหน่ายปูนซีเมนต์ผสมเสร็จ</option>
+                    </select>
+                    <input type="text" name="phone" placeholder="เบอร์โทร">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message" rows="2" placeholder="ข้อความ"></textarea>
+                    <button type="submit">ตกลง</button>
+                </form>
+            </div>
         </div>
-    
-        <div class="footer-column">
-            <h3>เเบบประกันที่เเนะนำ</h3>
-            <a href="./Service1.html"><p>● ประกันสุขภาพเหมาจ่าย</p></a>
-            <a href="./Service2.html"><p>● ประกันคุ้มครองโรคร้ายแรง</p></a>
-            <a href="./Service3.html"><p>● ประกันเพื่อการเก็บออม/ทุนการศึกษาบุตร</p></a>
-            <a href="./Service4.html"><p>● ประกันบำนาญ/เกษียณ/ลดหย่อนภาษี</p></a>
-            <a href="./Service5.html"><p>● ประกันควบคู่การลงทุน (Unitlink)</p></a>
-            <a href="./Service7.html"><p>● ประกันนิติบุคคล</p></a>
-        </div>
-    
-        <div class="footer-column contact">
-            <h3>ติดต่อเรา</h3>
-            <p>สำนักงานตัวแทนประกันชีวิต <br>คุณรัสรินทร์ บวรธนะเกียรติ์</p>
-            <p>115/11 โครงการเมอริทเพลสบางนา หมู่ 13 ซ.มหาชัย ต.บางพลีใหญ่ อ.บางพลี จ.สมุทรปราการ 10540</p>
-            <p style="margin: 0;">โทร: 0865662639(ใหม่), 0956465419(นก)</p>
-            <p style="padding-top: 10px;">Line ID : mai4263mai</p>
-        </div>
-    </footer>
-    
+    </div>
+  </body>  
+
     `;
   document.getElementById("footerHTML1").innerHTML = footerHTML;
 
