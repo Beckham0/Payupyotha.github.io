@@ -812,7 +812,7 @@ html {
 }
 
 .content6-buttons-a p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #000000;
   margin-bottom: 10px;
   margin-left: 5%;
@@ -848,7 +848,7 @@ html {
   }
 
   .content6-buttons-a p {
-    font-size: 0.4rem;
+    font-size: 0rem;
     padding: 0 0px;
     text-align: start;
   }
@@ -1228,6 +1228,10 @@ html {
   padding: 0 2%;
 }
 
+.h {
+  text-decoration: none;
+}
+
 .content8-buttons-a h1 {
   font-size: 2rem;
   color: #ffd700;
@@ -1501,4 +1505,199 @@ html {
     object-fit: cover;
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section_b {
+  height: 43rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Card_5 {
+  position: relative;
+  width: 99%;
+  height: 30%;
+  background: #424939;
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.card_img1 {
+  width: 55%;
+  height: 40rem;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card_img_a1 {
+  width: 70%;
+  height: 20%;
+  overflow: clip;
+  z-index: 5;
+  position: relative;
+  left: 70%;
+  top: 7%;
+  text-align: start;
+  margin: 5px;
+}
+
+.card_img_a2 {
+  width: 70%;
+  height: 20%;
+  overflow: clip;
+  z-index: 5;
+  position: relative;
+  left: 70%;
+  top: -5%;
+  text-align: start;
+  margin: 5px;
+}
+
+.card_img_a3 {
+  width: 70%;
+  height: 20%;
+  overflow: clip;
+  z-index: 5;
+  position: relative;
+  left: 70%;
+  top: -16%;
+  text-align: start;
+  margin: 5px;
+}
+
+.card_img_a1 span,
+.card_img_a2 span,
+.card_img_a3 span {
+  position: absolute;
+  font-size: clamp(14px, 3.5vw, 38px);
+  font-weight: bold;
+  color: #424939;
+}
+
+.card_buttons {
+  position: absolute;
+  left: 70%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.btn-yellow {
+  background-color: #ffe600;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.line-btn {
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.line-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+
+@media (max-width: 768px) {
+
+  .section_b {
+    height: 24rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .Card_5 {
+    position: relative;
+    width: 95%;
+    height: 35%;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0px 50px 50px 0px;
+  }
+
+  .card_img1 {
+    width: 75% !important;
+    height: 105vw !important;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .card_img_a1 {
+    width: 80%;
+    height: 40%;
+    overflow: clip;
+    z-index: 5;
+    position: relative;
+    left: 56%;
+    top: 11%;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .card_img_a2 {
+    width: 80%;
+    height: 40%;
+    overflow: clip;
+    z-index: 5;
+    position: relative;
+    left: 56%;
+    top: -23%;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .card_img_a3 {
+    width: 80%;
+    height: 20%;
+    overflow: clip;
+    z-index: 5;
+    position: relative;
+    left: 56%;
+    top: -57%;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .card_img_a1 span,
+  .card_img_a2 span,
+  .card_img_a3 span {
+    position: absolute;
+    font-size: clamp(13px, 3.5vw, 38px);
+    font-weight: bold;
+  }
+
 }
