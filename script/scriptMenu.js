@@ -17,19 +17,19 @@ function createNavbar() {
       <!-- กล่องเมนู -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a id="lang_Home" class="nav-link a" href="#">หน้าเเรก</a></li>
-          <li class="nav-item"><a id="lang_about" class="nav-link b" href="#">เกี่ยวกับเรา</a></li>
+          <li class="nav-item"><a id="lang_Home" class="nav-link a" href="./index.html">หน้าเเรก</a></li>
+          <li class="nav-item"><a id="lang_about" class="nav-link b" href="./เกี่ยวกับเรา.html">เกี่ยวกับเรา</a></li>
           <li class="nav-item dropdown">
             <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">รับเหมาก่อสร้าง</a>
               <ul class="dropdown-menu" style="background: #f8f9fa; opacity:0.9; max-width: 18rem;">
-              <li><a id="lang_item1" class="dropdown-item c1" href="./Service1.html">● รับสร้างโรงงาน</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./Service2.html">● รับสร้างบ้าน อาคาร</a></li>
-              <li><a id="lang_item3" class="dropdown-item c3" href="./Service3.html">● ผลิตจำหน่ายคอนกรีตผสมเสร็จ</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="#">● รับสร้างโรงงาน</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="#">● รับสร้างบ้าน อาคาร</a></li>
+              <li><a id="lang_item3" class="dropdown-item c3" href="#">● ผลิตจำหน่ายคอนกรีตผสมเสร็จ</a></li>
               </ul>
           </li>
           <li class="nav-item"><a id="lang_about" class="nav-link b" href="#">โครงการเรา</a></li>
           <li class="nav-item"><a id="lang_contact" class="nav-link e" href="#">ข่าวสาร</a></li>
-          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="#">ติดต่อเรา</a></li>
+          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา.html">ติดต่อเรา</a></li>
         </ul>
       </div>
 
