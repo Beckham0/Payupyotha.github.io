@@ -399,14 +399,6 @@ html {
   padding: 0px;
 }
 
-
-.content3-buttons-b img {
-  width: 95%;
-  height: 400px;
-  object-fit: cover;
-  margin: 10px;
-}
-
 @media (max-width: 768px) {
 
   .content-c {
@@ -430,15 +422,6 @@ html {
   .content3-buttons-a p {
     font-size: 0.8rem;
     padding: 0 10px;
-  }
-
-  .content3-buttons-b img {
-    width: 95%;
-    justify-content: center;
-    height: 280px;
-    object-fit: cover;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
-
   }
 }
 
@@ -483,10 +466,10 @@ html {
 .content5-buttons-b h1 {
   width: 95%;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #32351c;
   font-weight: bold;
   padding: 10px;
-  background-color: #1c3526;
+  background-color: #fff200;
   text-align: center;
 }
 
@@ -513,12 +496,12 @@ html {
 
   }
 
-    .content5-buttons-b h1 {
-      width: 95%;
-    font-size: 0.8rem;
-    color: #ffffff;
+  .content5-buttons-b h1 {
+    width: 95%;
+    font-size: 0.6rem;
     font-weight: bold;
     margin-bottom: 5px;
+    padding: 6px;
   }
 }
 
@@ -576,6 +559,7 @@ html {
 
   .content-d {
     max-width: 95%;
+    margin-bottom: 5%;
   }
 
   .content4-buttons-a {
@@ -584,6 +568,7 @@ html {
     column-gap: 9rem;
     margin: 0 auto;
     margin-top: 15px;
+    padding: 0px 20px;
   }
 
   .content4-buttons-a h1 {
