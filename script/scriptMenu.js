@@ -28,7 +28,7 @@ function createNavbar() {
               </ul>
           </li>
           <li class="nav-item"><a id="lang_about" class="nav-link b" href="#">โครงการเรา</a></li>
-          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="#">ข่าวสาร</a></li>
+          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ข่าวสาร.html">ข่าวสาร</a></li> 
           <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา.html">ติดต่อเรา</a></li>
         </ul>
       </div>

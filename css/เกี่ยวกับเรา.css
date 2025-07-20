@@ -354,6 +354,263 @@ html {
 
 
 
+.content-c {
+  /*padding: 10px 0;*/
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+}
+
+.port-content-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content3-buttons-a {
+  flex: 1 1 calc(30% - 10px);
+  min-width: 300px;
+  text-align: start;
+  margin-top: 3%;
+  padding: 0 2%;
+}
+
+.content3-buttons-a h1 {
+  font-size: 2.8rem;
+  color: #424939;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.content3-buttons-a p {
+  font-size: 1.1rem;
+  color: #424939;
+  margin-bottom: 10px;
+}
+
+
+.content3-buttons-b {
+  flex: 1 1 calc(70% - 10px);
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+
+.content3-buttons-b img {
+  width: 95%;
+  height: 400px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .content-c {
+    max-width: 90%;
+  }
+
+  .content3-buttons-a {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 9rem;
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+
+  .content3-buttons-a h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .content3-buttons-a p {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
+
+  .content3-buttons-b img {
+    width: 95%;
+    justify-content: center;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+
+  }
+}
+
+
+
+
+.content-e {
+  /*padding: 10px 0;*/
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 0%;
+  display: flex;
+}
+
+.port-content-e {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0px;
+  background-color: #42493900;
+  padding: 0 0 20px 0;
+  flex: 1 1 calc(20% - 10px);
+}
+
+
+.content5-buttons-b {
+  flex: 1 1 calc(60% - 10px);
+  min-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+
+.content5-buttons-b img {
+  width: 95%;
+  height: 300px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+.content5-buttons-b h1 {
+  width: 95%;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #1c3526;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  .content-e {
+    max-width: 95%;
+    margin: 0 10px;
+  }
+
+  .content5-buttons-b {
+    flex: 1 1 calc(60% - 10px);
+    min-width: 100px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .content5-buttons-b img {
+    width: 95%;
+    justify-content: center;
+    height: 150px;
+    object-fit: cover;
+    margin: 0px;
+
+  }
+
+    .content5-buttons-b h1 {
+      width: 95%;
+    font-size: 0.8rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+
+.content-d {
+  /*padding: 10px 0;*/
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+.port-content-d {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: linear-gradient(to right, #007e48, #ffffff);
+}
+
+.content4-buttons-a {
+  flex: 1 1 calc(50% - 10px);
+  min-width: 300px;
+  text-align: start;
+  margin-top: 3%;
+  padding: 0 2%;
+}
+
+.content4-buttons-a h1 {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.content4-buttons-b {
+  flex: 1 1 calc(20% - 10px);
+  min-width: 200px;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+}
+
+
+.content4-buttons-b img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+}
+
+@media (max-width: 768px) {
+
+  .content-d {
+    max-width: 95%;
+  }
+
+  .content4-buttons-a {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 9rem;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .content4-buttons-a h1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .content4-buttons-b img {
+    width: 95%;
+    justify-content: center;
+    height: 170px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+
+  }
+}
+
+
+
+
+
+
+
+
+
 .section {
   font-size: 3.2rem;
   color: #1d3a29;
