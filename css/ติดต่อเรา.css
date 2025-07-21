@@ -25,7 +25,7 @@ html {
 .First_part_overlay {
   position: absolute;
   inset: 0;
-  background: rgba(107, 107, 107, 0.108);
+  background: rgba(0, 0, 0, 0.286);
   z-index: 0;
 }
 
