@@ -1,17 +1,25 @@
 function createNavbar() {
   const navbarHTML = `
     
-<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 100px;">
-  <nav class="navbar navbar-expand-custom bg-body" style="z-index: 999; background-color:#35373900 !important; height: 100px;">
+<div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 95px;">
+  <nav class="navbar navbar-expand-custom bg-body" style="z-index: 999; background-color:#f8f9fa !important; !important; height: 95px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- โลโก้ -->
       <a class="navbar-brand" href="./index.html">
-      <img src="LOGO1.png" style="border-radius: 0px;" width="100%" height="120px"> 
+      <img src="LOGO1.png" style="border-radius: 0px;" width="100%" height="80px">
+      </a>
+
+      <!-- ปุ่ม "ติดต่อเรา" ย้ายมาไว้ข้างหน้า navbar-toggler บนมือถือ -->
+      <a class="navbar-brand2 d-lg-none" href="https://line.me/R/ti/p/mai4263mai" style="width: 55px; height: 40px; display: flex; align-items: center; margin-left: 0px;">
+      <img src="line.png" alt="" style="width: 50px;border-radius: 50px;">
+      </a>
+      <a class="navbar-brand2 d-lg-none" href="tel:086 5662639" style=" height: 40px;  display: flex; align-items: center; justify-content: center; margin-left: 0px;">
+      <img src="mobile.png" alt="" style="width: 50px; border-radius: 50px;">
       </a>
 
       <!-- ปุ่มเปิดเมนูบนมือถือ -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="color:#198754;">MENU</span>
+        <span class="navbar-toggler-icon" style="color:#52643a;">MENU</span>
       </button>
 
       <!-- กล่องเมนู -->
@@ -32,6 +40,14 @@ function createNavbar() {
           <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา.html">ติดต่อเรา</a></li>
         </ul>
       </div>
+
+ <!-- ปุ่ม "ติดต่อเรา" แบบ PC -->
+      <a class="navbar-brand2 d-none d-lg-flex" href="" style="width: 50px; display: flex; align-items: center; ">
+        <img src="line.png" alt="" style="width: 50px;margin: 10px; border-radius: 50px;">
+      </a>
+      <a class="navbar-brand2 d-none d-lg-flex" href="tel:" style="width: 50px;  margin: 0 30px; display: flex; align-items: center; justify-content: center;">
+        <img src="mobile.png" alt="" style="width: 50px;margin: 10px; border-radius: 50px;">
+      </a>
 
     </div>
   </nav>
