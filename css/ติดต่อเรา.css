@@ -368,6 +368,7 @@ html {
   .sectionMAP {
     min-height: 300px;
     padding: 0;
+    margin: 0 10px;
   }
 
   .wrap_map {
