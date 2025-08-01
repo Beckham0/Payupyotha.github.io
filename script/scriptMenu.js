@@ -6,7 +6,7 @@ function createNavbar() {
     <div class="container-fluid d-flex align-items-center justify-content-between">
       <!-- โลโก้ -->
       <a class="navbar-brand" href="./index.html">
-      <img src="LOGO1.png" style="border-radius: 0px;" width="100%" height="80px">
+      <img src="LOGO1.png" width="80" height="80" alt="โลโก้" style="display:block; margin:auto;" />
       </a>
 
       <!-- ปุ่ม "ติดต่อเรา" ย้ายมาไว้ข้างหน้า navbar-toggler บนมือถือ -->
