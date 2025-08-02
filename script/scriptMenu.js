@@ -35,7 +35,14 @@ function createNavbar() {
               <li><a id="lang_item3" class="dropdown-item c3" href="./รับผลิตจำหน่ายคอนกรีตผสมเสร็จ.html">● ผลิตจำหน่ายคอนกรีตผสมเสร็จ</a></li>
               </ul>
           </li>
-          <li class="nav-item"><a id="lang_about" class="nav-link b" href="./โครงการเรา.html">โครงการเรา</a></li>
+           <li class="nav-item dropdown">
+            <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">โครงการเรา</a>
+              <ul class="dropdown-menu" style="background: #f8f9fa; opacity:0.9; max-width: 18rem;">
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา.html">● บริษัท พายัพ โยธา จำกัด</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา.html">● หจก . ฟลุ๊ค คอนกรีต</a></li>
+              </ul>
+          </li>
+          <!--<li class="nav-item"><a id="lang_about" class="nav-link b" href="./โครงการเรา.html">โครงการเรา</a></li> -->
           <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ข่าวสาร.html">ข่าวสาร</a></li> 
           <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา.html">ติดต่อเรา</a></li>
         </ul>
@@ -88,7 +95,7 @@ function createfooter() {
         }
 
         .image-end {
-            flex: 1 1 calc(70% - 10px);
+            flex: 1 1 calc(60% - 10px);
             max-width: 900px;
             width: 100%;
             background-color: rgba(255, 246, 233, 1);
