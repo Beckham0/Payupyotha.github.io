@@ -2,62 +2,403 @@
 <html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>จัดเลย์เอาต์ภาพ</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จัดเลย์เอาต์ภาพ</title>
+  <style>
+    .carousel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 80%;
+      height: auto;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card-ct {
+      min-width: 365px;
+      margin: 10px 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #004bad00;
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0);
+      height: auto;
+    }
+
+    .card-ct img {
+      width: 100%;
+      height: 305px;
+    }
+
+    button {
+      background: #004bad00;
+      color: #fff;
+      border: none;
+      padding: 5px 5px;
+      cursor: pointer;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+
+    .card-buttons-Service {
+      margin-top: auto;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding: 10px;
+      display: grid
+    }
+
+    .card-buttons-Service h1 {
+      color: #ff0000;
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+
+    .card-buttons-Service a {
+      color: #002d71;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .btn1 {
+      padding: 10px 20px;
+      background: #002d71;
+      color: white;
+      border-radius: 2px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn1:hover {
+      background: #7a7a7a;
+    }
 
 
-        .contenta-buttons-a {
-            min-width: 100px;
-            text-align: start;
-            margin: 30px auto;
-        }
+    @media (max-width: 1300px) {
 
-        .contenta_btn-1 {
-            background-color: #ffd700;
-            color: #000;
-            padding: 12px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.4rem;
-            border-radius: 10px;
-            transition: background-color 0.3s;
-            margin: 0 40%;
-            display: flex;
-            justify-content: center;
-        }
+      .carousel {
+        display: flex;
+        overflow: hidden;
+        width: 1200px;
+        height: auto;
+      }
 
-        .contenta_btn-1:hover {
-            background-color: #c3a601;
-        }
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
 
-        @media (max-width: 768px) {
+      .card-ct {
+        min-width: 340px;
+        margin: 10px 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #004bad00;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0);
+        height: auto;
+      }
 
-            .contenta-buttons-a {
-                display: grid;
-                grid-template-columns: 1fr;
-                column-gap: 9rem;
-                margin: 0 auto;
-                margin-top: 10px;
-            }
+      .card-ct img {
+        width: 100%;
+        height: 300px;
+      }
 
-            .contenta_btn-1 {
-                font-size: 1rem;
-                padding: 8px 16px;
-                text-align: center;
-                margin: 0 10%;
-            }
-        }
-    </style>
+      button {
+        background: #004bad00;
+        color: #fff;
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin: 0 10px;
+      }
+
+      .card-buttons-Service {
+        margin-top: auto;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 10px;
+        display: grid
+      }
+
+      .card-buttons-Service h1 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      .card-buttons-Service a {
+        color: #002d71;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .btn1 {
+        padding: 10px 20px;
+        background: #002d71;
+        color: white;
+        border-radius: 2px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .btn1:hover {
+        background: #7a7a7a;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .card-ct {
+        min-width: 370px;
+        margin: 10px 20px 10px 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #ffffff;
+        height: auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+      }
+
+      .carousel {
+        width: 450px;
+        height: auto;
+      }
+
+      .card-ct img {
+        width: 100%;
+        height: 260px;
+      }
+
+      .prev2 {
+        z-index: 888;
+        padding: 100px 0px;
+        font-size: 5px;
+        margin: 0px;
+        left: 0px;
+      }
+
+      .next2 {
+        z-index: 888;
+        padding: 100px 0px;
+        font-size: 5px;
+        margin: 5px;
+        right: 0px;
+      }
+
+      .card-buttons-Service h1 {
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      .card-buttons-Service a {
+        color: #002d71;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .card-ct {
+        min-width: 340px;
+        margin: 10px 20px 10px 20px;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #ffffff;
+        height: auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+      }
+
+      .carousel {
+        width: 400px;
+        height: auto;
+      }
+
+      .card-ct img {
+        width: 100%;
+        height: 230px;
+      }
+
+      .card-buttons-Service h1 {
+        padding: 16px 2px 0 9px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+
+      .prev2 {
+        z-index: 888;
+        font-size: 5px;
+        margin: 0px;
+        left: 0px;
+      }
+
+      .next2 {
+        z-index: 888;
+        font-size: 5px;
+        margin: 0 5px 0 0;
+        right: 0px;
+      }
+
+      .card-buttons-Service a {
+        color: #002d71;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-            <div class="contenta-buttons-a">
-                <a href="#" class="contenta_btn-1">GET IN TOUCH</a>
-            </div>
 
-    <br>
+
+  <div class="carousel-container">
+    <button class="prev2" style=" background-color: #f0ffff00;"><img src="Sorce/left-arrow.png" alt=""
+        style="width: 1.5rem; margin-right: 5px;"></button>
+    <div class="carousel">
+      <div class="carousel-track">
+        <div class="card-ct" style="margin-left: 10px;">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>1ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7; " target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+        <div class="card-ct">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>2ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7; " target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+        <div class="card-ct">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>3ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7;" target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+        <div class="card-ct">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>4ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7;" target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+        <div class="card-ct">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>5ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7;" target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+        <div class="card-ct">
+          <img src="imges/21.jpg" alt="">
+          <div class="card-buttons-Service">
+            <h1>6ก่อสร้างโรงงานอุตสาหกรรม</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScnpAyCM-vRDhgu3Syw2fZRepKFHLTeqqR_bYENl40sPQwqOA/viewform"
+              class="btn1" style="color: #f7f7f7;" target="_blank" rel="noopener noreferrer">สนใจแผนนี้</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="next2" style=" background-color: #f0ffff00;"><img src="Sorce/right-arrow.png" alt=""
+        style="width: 1.9rem; margin-left: 0px;"></button>
+  </div>
+
+
+  <script>
+    document.querySelectorAll('.carousel-container').forEach(container => {
+      const track = container.querySelector('.carousel-track');
+      const prevButton = container.querySelector('.prev2');
+      const nextButton = container.querySelector('.next2');
+      const cardWidth = container.querySelector('.card-ct').offsetWidth + 40;
+      let currentPosition = 0;
+
+      // ฟังก์ชันตรวจสอบจำนวนการ์ดที่แสดงตามขนาดหน้าจอ
+      const getVisibleCards = () => {
+        if (window.innerWidth >= 1500) return 4;
+        if (window.innerWidth >= 480) return 3;
+        return 1;
+      };
+
+      let visibleCards = getVisibleCards();
+
+      // อัปเดตจำนวนการ์ดเมื่อเปลี่ยนขนาดหน้าจอ
+      window.addEventListener('resize', () => {
+        visibleCards = getVisibleCards();
+        currentPosition = 0;
+        track.style.transform = `translateX(${currentPosition}px)`;
+      });
+
+      nextButton.addEventListener('click', () => {
+        if (currentPosition > -(track.scrollWidth - cardWidth * visibleCards)) {
+          currentPosition -= cardWidth;
+          track.style.transform = `translateX(${currentPosition}px)`;
+        }
+      });
+
+      prevButton.addEventListener('click', () => {
+        if (currentPosition < 0) {
+          currentPosition += cardWidth;
+          track.style.transform = `translateX(${currentPosition}px)`;
+        }
+      });
+
+      // สร้างตัวแปรเพื่อควบคุมทิศทาง
+      let scrollDirection = 'right';
+
+      // เริ่มเลื่อนอัตโนมัติแบบไป-กลับ
+      let autoScrollInterval = setInterval(() => {
+        const maxScroll = track.scrollWidth - cardWidth * visibleCards;
+
+        if (scrollDirection === 'right') {
+          if (currentPosition > -maxScroll) {
+            currentPosition -= cardWidth;
+          } else {
+            scrollDirection = 'left';
+            currentPosition += cardWidth;
+          }
+        } else {
+          if (currentPosition < 0) {
+            currentPosition += cardWidth;
+          } else {
+            scrollDirection = 'right';
+            currentPosition -= cardWidth;
+          }
+        }
+
+        track.style.transform = `translateX(${currentPosition}px)`;
+      }, 4000);
+    });
+
+  </script>
+
+
+
 </body>
 
 </html>
