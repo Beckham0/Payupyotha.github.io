@@ -695,8 +695,8 @@ html {
 }
 
 .line {
-  width: 20%;
-  height: 5px;
+  width: 40%;
+  height: 3px;
   background: #ffd700;
   margin: 10px auto;
 }
@@ -1086,7 +1086,7 @@ html {
 
 .line1 {
   width: 40%;
-  height: 5px;
+  height: 3px;
   background: #ffd700;
   margin: 10px auto;
 }

@@ -583,8 +583,8 @@ html {
 }
 
 .line {
-  width: 20%;
-  height: 5px;
+  width: 40%;
+  height: 3px;
   background: #ffd700;
   margin: 10px auto;
 }
@@ -1204,7 +1204,7 @@ html {
 
 .underline {
   width: 25%;
-  height: 5px;
+  height: 3px;
   background: #ffd700;
   margin-left: 3%;
   margin-top: 55px;
