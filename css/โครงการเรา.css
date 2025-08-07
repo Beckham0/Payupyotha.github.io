@@ -73,7 +73,6 @@ html {
 
   .First_part-content {
     max-width: 100%;
-    margin-left: 3%;
   }
 
   .First_part h1 {
@@ -107,9 +106,7 @@ html {
   }
 
   .First_part h2 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    margin-right: 14%;
+    font-size: 1.3rem;
   }
 
   .First_part_btn-1 {
