@@ -183,7 +183,7 @@ html {
   border-radius: 8px;
   display: block;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 
 .close {
@@ -789,7 +789,7 @@ html {
 
 .content8-buttons-a p {
   font-size: 1.2rem;
-  color: #000000;
+  color: #1d3a29;
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -813,6 +813,7 @@ html {
 }
 
 
+
 @media (max-width: 1600px) {
 .content-h {
   /*padding: 10px 0;*/
@@ -821,6 +822,11 @@ html {
   margin-top: 1%;
   display: flex;
 }
+
+.content8-buttons-a p {
+  font-size: 1rem;
+}
+
 }
 
 @media (max-width: 768px) {
@@ -847,7 +853,7 @@ html {
   }
 
   .content8-buttons-a p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0 10px;
   }
 
