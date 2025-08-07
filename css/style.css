@@ -1851,7 +1851,7 @@ button {
   .carousel {
     display: flex;
     overflow: hidden;
-    width: 1200px;
+    width: 90%;
     height: auto;
   }
 

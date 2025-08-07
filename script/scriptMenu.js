@@ -38,8 +38,12 @@ function createNavbar() {
            <li class="nav-item dropdown">
             <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">โครงการเรา</a>
               <ul class="dropdown-menu" style="background: #f8f9fa; opacity:0.9; max-width: 18rem;">
-              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา.html">● บริษัท พายัพ โยธา จำกัด</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา.html">● หจก . ฟลุ๊ค คอนกรีต</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างโรงงานอุตสาหกรรม.html">● ก่อสร้างโรงงานอุตสาหกรรม</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างโกดัง.html">● ก่อสร้างโกดัง</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างถนนคอนกรีต.html">● ก่อสร้างถนนคอนกรีต</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา งานคอนกรีตผสมเสร็จ.html">● งานคอนกรีตผสมเสร็จ</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างอาคาร.html">● ก่อสร้างอาคาร</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างบ้าน ทีพักอาศัย.html">● ก่อสร้างบ้าน ทีพักอาศัย</a></li>
               </ul>
           </li>
           <!--<li class="nav-item"><a id="lang_about" class="nav-link b" href="./โครงการเรา.html">โครงการเรา</a></li> -->
