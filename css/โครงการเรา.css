@@ -262,46 +262,57 @@ html {
   /*padding: 10px 0;*/
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 1%;
-  display: flex;
 }
 
 .port-content-g {
-  justify-content: space-between;
-  gap: 0px;
   background-color: #42493900;
-  flex: 1 1 calc(20% - 10px);
 }
 
 .content7-buttons-b {
-  flex: 1 1 calc(60% - 10px);
-  min-width: 300px;
   width: 100%;
   height: auto;
   padding: 0px;
 }
 
 .content7-buttons-b img {
-  width: 95%;
-  height: 500px;
-  object-fit: cover;
-  margin: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 1600px) {
+
+  .content-g {
+    max-width: 76%;
+  }
+
+  .content7-buttons-b img {
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+  }
+}
+
+@media (max-width: 1300px) {
+
+  .content-g {
+    max-width: 90%;
+  }
+
+  .content7-buttons-b img {
+    width: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
+  }
 }
 
 @media (max-width: 768px) {
 
   .content-g {
-    max-width: 95%;
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 5rem;
+    max-width: 90%;
   }
 
   .content7-buttons-b img {
-    width: 95%;
-    justify-content: center;
-    height: 280px;
-    object-fit: cover;
+    width: 100%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
 
   }
@@ -1126,6 +1137,25 @@ button {
   background: #1d3a29;
 }
 
+@media (max-width: 1600px) {
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 78%;
+  height: auto;
+}
+
+.card-ct {
+  min-width: 360px;
+  margin: 10px 20px;
+  overflow: hidden;
+  background: #004bad00;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0);
+  height: auto;
+}
+
+}
 
 @media (max-width: 1300px) {
 
@@ -1329,9 +1359,10 @@ button {
 }
 
 .card-ct2 img {
-  width: 100%;
+  width: 95%;
   height: 305px;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 button {
@@ -1369,12 +1400,34 @@ button {
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1600px) {
+
+.carousel2 {
+  display: flex;
+  overflow: hidden;
+  width: 78%;
+  height: auto;
+}
+
+.card-ct2 {
+  min-width: 360px;
+  margin: 10px 20px;
+  overflow: hidden;
+  background: #004bad00;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0);
+  height: auto;
+}
+
+}
+
+
+
+@media (max-width: 1310px) {
 
   .carousel2 {
     display: flex;
     overflow: hidden;
-    width: 1200px;
+    width: 90%;
     height: auto;
   }
 
@@ -1384,7 +1437,7 @@ button {
   }
 
   .card-ct2 {
-    min-width: 340px;
+    min-width: 330px;
     margin: 10px 20px;
     border-radius: 5px;
     overflow: hidden;
@@ -1443,7 +1496,7 @@ button {
   }
 
   .card-ct2 img {
-    width: 100%;
+    width: 93%;
     height: 260px;
   }
 
