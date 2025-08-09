@@ -286,6 +286,16 @@ html {
   border-radius: 20px;
 }
 
+.content7-buttons-b video {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #1d3a29;
+}
+
 
 @media (max-width: 1600px) {
 
@@ -314,13 +324,22 @@ html {
 @media (max-width: 768px) {
 
   .content-g {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   .content7-buttons-b img {
     width: 100%;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
 
+  }
+
+  .content7-buttons-b video {
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+    object-fit: cover;
+    order: 1;
+    margin: 0px;
   }
 }
 

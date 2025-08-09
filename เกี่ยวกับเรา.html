@@ -92,7 +92,7 @@
             </div>
             <div class="content2-buttons-b">
                 <div>
-                    <video width="640" height="360" controls>
+                    <video width="640" height="360" controls class="scroll-video" muted playsinline preload="metadata">
                         <source src="video/myvideo.mp4" type="video/mp4">
                         เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
                     </video>
@@ -100,6 +100,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const videos = document.querySelectorAll(".scroll-video");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.play(); // เล่นเมื่อเห็น
+                    } else {
+                        entry.target.pause(); // หยุดเมื่อเลื่อนออก
+                    }
+                });
+            }, { threshold: 0.5 }); // 0.5 = ต้องเห็นครึ่งหนึ่งของวิดีโอถึงจะเล่น
+
+            videos.forEach(video => observer.observe(video));
+        });
+    </script>
 
     <br>
 
