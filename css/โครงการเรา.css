@@ -282,7 +282,8 @@ html {
 
 .content7-buttons-b img {
   width: 100%;
-  height: auto;
+  height: 600px;
+  object-fit: cover;
   border-radius: 20px;
 }
 
@@ -329,6 +330,7 @@ html {
 
   .content7-buttons-b img {
     width: 100%;
+    height: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.21);
 
   }
