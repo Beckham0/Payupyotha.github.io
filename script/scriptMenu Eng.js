@@ -4,12 +4,12 @@ function createNavbar() {
 <div id="navbar-container" class="navbar-expand-lg" style="z-index: 999 !important; height: 95px;">
   <nav class="navbar navbar-expand-custom bg-body" style="z-index: 999; background-color:#f8f9fa !important; !important; height: 95px;">
     <div class="container-fluid d-flex align-items-center justify-content-between">
-      <!-- โลโก้ -->
+      <!-- Logo -->
       <a class="navbar-brand" href="./index.html">
-      <img src="LOGO1.png" width="80" height="80" alt="โลโก้" style="display:block; margin:auto;" />
+      <img src="LOGO1.png" width="80" height="80" alt="logo" style="display:block; margin:auto;" />
       </a>
 
-      <!-- ปุ่ม "ติดต่อเรา" ย้ายมาไว้ข้างหน้า navbar-toggler บนมือถือ -->
+      <!-- "Contact Us" buttons on mobile -->
       <a class="navbar-brand2 d-lg-none" href="https://line.me/R/ti/p/mai4263mai" style="width: 55px; height: 40px; display: flex; align-items: center; margin-left: 0px;">
       <img src="line.png" alt="" style="width: 50px;border-radius: 50px;">
       </a>
@@ -17,42 +17,42 @@ function createNavbar() {
       <img src="mobile.png" alt="" style="width: 50px; border-radius: 50px;">
       </a>
 
-      <!-- ปุ่มเปิดเมนูบนมือถือ -->
+      <!-- Mobile menu button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="color:#52643a;">MENU</span>
       </button>
 
-      <!-- กล่องเมนู -->
+      <!-- Navbar menu -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a id="lang_Home" class="nav-link a" href="./index.html">หน้าเเรก</a></li>
-          <li class="nav-item"><a id="lang_about" class="nav-link b" href="./เกี่ยวกับเรา.html">เกี่ยวกับเรา</a></li>
+          <li class="nav-item"><a id="lang_Home" class="nav-link a" href="./index Eng.html">HOME</a></li>
+          <li class="nav-item"><a id="lang_about" class="nav-link b" href="./เกี่ยวกับเรา Eng.html">ABOUT US</a></li>
           <li class="nav-item dropdown">
-            <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">รับเหมาก่อสร้าง</a>
+            <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">CONSTRUCTION SERVICES</a>
               <ul class="dropdown-menu" style="background: #f8f9fa; opacity:0.9; max-width: 18rem;">
-              <li><a id="lang_item1" class="dropdown-item c1" href="./รับสร้างโรงงาน.html">● รับสร้างโรงงาน</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./รับสร้างบ้าน อาคาร.html">● รับสร้างบ้าน อาคาร</a></li>
-              <li><a id="lang_item3" class="dropdown-item c3" href="./รับผลิตจำหน่ายคอนกรีตผสมเสร็จ.html">● ผลิตจำหน่ายคอนกรีตผสมเสร็จ</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./รับสร้างโรงงาน Eng.html">● Factory Construction</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./รับสร้างบ้าน อาคาร Eng.html">● House & Building Construction</a></li>
+              <li><a id="lang_item3" class="dropdown-item c3" href="./รับผลิตจำหน่ายคอนกรีตผสมเสร็จ Eng.html">● Ready-Mix Concrete Supply</a></li>
               </ul>
           </li>
            <li class="nav-item dropdown">
-            <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">โครงการเรา</a>
+            <a id="lang_Services" class="nav-link dropdown-toggle c" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">OUR PROJECTS</a>
               <ul class="dropdown-menu" style="background: #f8f9fa; opacity:0.9; max-width: 18rem;">
-              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างโรงงานอุตสาหกรรม.html">● ก่อสร้างโรงงานอุตสาหกรรม</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างโกดัง.html">● ก่อสร้างโกดัง</a></li>
-              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างถนนคอนกรีต.html">● ก่อสร้างถนนคอนกรีต</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา งานคอนกรีตผสมเสร็จ.html">● งานคอนกรีตผสมเสร็จ</a></li>
-              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างอาคาร.html">● ก่อสร้างอาคาร</a></li>
-              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างบ้าน ทีพักอาศัย.html">● ก่อสร้างบ้าน ทีพักอาศัย</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างโรงงานอุตสาหกรรม Eng.html">● Industrial Factory Construction</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างโกดัง Eng.html">● Warehouse Construction</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างถนนคอนกรีต Eng.html">● Concrete Road Construction</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา งานคอนกรีตผสมเสร็จ Eng.html">● Ready-Mix Concrete Works</a></li>
+              <li><a id="lang_item1" class="dropdown-item c1" href="./โครงการเรา ก่อสร้างอาคาร Eng.html">● Building Construction</a></li>
+              <li><a id="lang_item2" class="dropdown-item c2" href="./โครงการเรา ก่อสร้างบ้าน ทีพักอาศัย Eng.html">● Residential Construction</a></li>
               </ul>
           </li>
-          <!--<li class="nav-item"><a id="lang_about" class="nav-link b" href="./โครงการเรา.html">โครงการเรา</a></li> -->
-          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ข่าวสาร.html">ข่าวสาร</a></li> 
-          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา.html">ติดต่อเรา</a></li>
+          <!--<li class="nav-item"><a id="lang_about" class="nav-link b" href="./โครงการเรา Eng.html">OUR PROJECTS</a></li> -->
+          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ข่าวสาร Eng.html">NEWS</a></li> 
+          <li class="nav-item"><a id="lang_contact" class="nav-link e" href="./ติดต่อเรา Eng.html">CONTACT US</a></li>
         </ul>
       </div>
 
- <!-- ปุ่ม "ติดต่อเรา" แบบ PC -->
+ <!-- "Contact Us" buttons on desktop -->
       <a class="navbar-brand2 d-none d-lg-flex" href="" style="width: 50px; display: flex; align-items: center; ">
         <img src="line.png" alt="" style="width: 50px;margin: 10px; border-radius: 50px;">
       </a>
@@ -66,12 +66,13 @@ function createNavbar() {
     `;
   document.getElementById("navbar-container").innerHTML = navbarHTML;
 
-  // Initialize Bootstrap JavaScript (สำคัญมาก)
-  const navbar = document.querySelector('.navbar'); // เลือก element navbar
-  new bootstrap.Collapse(navbar, { // สร้าง instance ของ Bootstrap Collapse
-    toggle: false // หรือ true ถ้าต้องการให้เมนูเปิดตอนโหลดหน้าเว็บ
+  // Initialize Bootstrap JavaScript
+  const navbar = document.querySelector('.navbar'); 
+  new bootstrap.Collapse(navbar, { 
+    toggle: false 
   });
 }
+
 
 
 function createfooter() {
@@ -84,7 +85,6 @@ function createfooter() {
         }
 
         .content-end {
-            /*padding: 10px 0;*/
             max-width: 100%;
             margin: 0 auto;
             background-color: #223d3c;
@@ -129,8 +129,6 @@ function createfooter() {
             margin: 5px 100px;
             padding-bottom: 20px;
         }
-
-
 
         .contact-form {
             flex: 1 1 calc(30% - 10px);
@@ -178,9 +176,6 @@ function createfooter() {
             font-weight: bold;
             cursor: pointer;
             transition: transform 0.2s ease;
-            /*background-color: #e0c402;
-            padding: 10px;
-            border-radius: 20px;*/
         }
 
         .contact-form button:hover {
@@ -221,20 +216,20 @@ function createfooter() {
                 </div>
             </div>
             <div class="contact-form">
-                <h2>ติดต่อเรา</h2>
+                <h2>Contact Us</h2>
                 <form action="#" method="post">
-                    <input type="text" name="name" placeholder="ชื่อ–สกุล" required>
-                    <input type="text" name="company" placeholder="บริษัท">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="text" name="company" placeholder="Company">
                     <select name="service">
-                        <option disabled selected>เลือกบริการ</option>
-                        <option style="color: rgba(0, 0, 0, 1);">รับสร้างโรงงาน</option>
-                        <option style="color: rgba(0, 0, 0, 1);">รับสร้างบ้าน อาคาร</option>
-                        <option style="color: rgba(0, 0, 0, 1);">ผลิตจำหน่ายปูนซีเมนต์ผสมเสร็จ</option>
+                        <option disabled selected>Select a Service</option>
+                        <option style="color: rgba(0, 0, 0, 1);">Factory Construction</option>
+                        <option style="color: rgba(0, 0, 0, 1);">House & Building Construction</option>
+                        <option style="color: rgba(0, 0, 0, 1);">Ready-Mix Concrete Supply</option>
                     </select>
-                    <input type="text" name="phone" placeholder="เบอร์โทร">
+                    <input type="text" name="phone" placeholder="Phone Number">
                     <input type="email" name="email" placeholder="E-mail">
-                    <textarea name="message" rows="2" placeholder="ข้อความ"></textarea>
-                    <button type="submit">ตกลง</button>
+                    <textarea name="message" rows="2" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
@@ -244,9 +239,9 @@ function createfooter() {
     `;
   document.getElementById("footerHTML1").innerHTML = footerHTML;
 
-  // Initialize Bootstrap JavaScript (สำคัญมาก)
-  const footer = document.querySelector('.FooterHTML'); // เลือก element navbar
-  new bootstrap.Collapse(footer, { // สร้าง instance ของ Bootstrap Collapse
-    toggle: false // หรือ true ถ้าต้องการให้เมนูเปิดตอนโหลดหน้าเว็บ
+  // Initialize Bootstrap JavaScript
+  const footer = document.querySelector('.FooterHTML'); 
+  new bootstrap.Collapse(footer, { 
+    toggle: false 
   });
 }
