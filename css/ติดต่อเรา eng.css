@@ -407,6 +407,39 @@ html {
 
 }
 
+.section-n {
+  font-size: 2rem;
+  color: #1d3a29;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1%;
+}
+
+@media (max-width: 1500px) {
+  .section-n {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .section-n {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .section-1 {
