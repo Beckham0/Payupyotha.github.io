@@ -431,7 +431,31 @@ html {
 
 
 
+.section-4 {
+  font-size: 1.6rem;
+  color: #1d3a29;
+  background-color: #ffd900ec;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 10px;
+  margin: 1% 25%;
+}
 
+@media (max-width: 1500px) {
+  .section-4 {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .section-4 {
+    font-size: 1.1rem;
+      padding: 5px 1dvh;
+      margin: 3% 3%;
+  }
+
+}
 
 
 

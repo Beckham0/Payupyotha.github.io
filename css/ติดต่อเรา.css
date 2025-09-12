@@ -441,7 +441,7 @@ html {
   text-align: center;
   font-weight: 700;
   padding: 10px 5px;
-  margin: 1% 30%;
+  margin: 1% 25%;
 }
 
 @media (max-width: 1500px) {
@@ -453,8 +453,9 @@ html {
 
 @media (max-width: 768px) {
   .section-4 {
-    font-size: 1.3rem;
-    margin: 0 1%;
+    font-size: 1.1rem;
+      padding: 5px 1dvh;
+      margin: 3% 3%;
   }
 
 }
