@@ -10,10 +10,10 @@ function createNavbar() {
       </a>
 
       <!-- ปุ่ม "ติดต่อเรา" ย้ายมาไว้ข้างหน้า navbar-toggler บนมือถือ -->
-      <a class="navbar-brand2 d-lg-none" href="https://line.me/R/ti/p/mai4263mai" style="width: 55px; height: 40px; display: flex; align-items: center; margin-left: 0px;">
+      <a class="navbar-brand2 d-lg-none" href="https://line.me/ti/p/kbw09b3wH4" style="width: 55px; height: 40px; display: flex; align-items: center; margin-left: 0px;">
       <img src="line.png" alt="" style="width: 50px;border-radius: 50px;">
       </a>
-      <a class="navbar-brand2 d-lg-none" href="tel:086 5662639" style=" height: 40px;  display: flex; align-items: center; justify-content: center; margin-left: 0px;">
+      <a class="navbar-brand2 d-lg-none" href="tel:089-788-9515" style=" height: 40px;  display: flex; align-items: center; justify-content: center; margin-left: 0px;">
       <img src="mobile.png" alt="" style="width: 50px; border-radius: 50px;">
       </a>
 
@@ -53,10 +53,10 @@ function createNavbar() {
       </div>
 
  <!-- ปุ่ม "ติดต่อเรา" แบบ PC -->
-      <a class="navbar-brand2 d-none d-lg-flex" href="" style="width: 50px; display: flex; align-items: center; ">
+      <a class="navbar-brand2 d-none d-lg-flex" href="https://line.me/ti/p/kbw09b3wH4" style="width: 50px; display: flex; align-items: center; ">
         <img src="line.png" alt="" style="width: 50px;margin: 10px; border-radius: 50px;">
       </a>
-      <a class="navbar-brand2 d-none d-lg-flex" href="tel:" style="width: 50px;  margin: 0 30px; display: flex; align-items: center; justify-content: center;">
+      <a class="navbar-brand2 d-none d-lg-flex" href="tel:089-788-9515" style="width: 50px;  margin: 0 30px; display: flex; align-items: center; justify-content: center;">
         <img src="mobile.png" alt="" style="width: 50px;margin: 10px; border-radius: 50px;">
       </a>
 
